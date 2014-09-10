@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<div role="main" class="content clearfix">
+{% for page in front %}
+	{% if loop.index == 1 %}
+	<article class="wrapper main">
+		{{ page.content }}
+	</article>
+{% endfor %}
+	<p>Posts in the <a href="{{ SITEURL }}/archives.html">archive</a>.</p>
+</div>
+{% endblock content %}
