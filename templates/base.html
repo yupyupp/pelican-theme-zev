@@ -29,9 +29,10 @@
 						<li><a href="{{ link }}">{{ title }}</a></li>
 					{% endfor %}
 					{% if DISPLAY_PAGES_ON_MENU != False %}
-						{% for p in LINKS %}
+						{% for p in PAGES %}
 							<li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
 						{% endfor %}
+						<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
 					{% endif %}
 				
 		</header>
@@ -43,10 +44,9 @@
 		<footer class="clearfix">
 			<div class="wrapper pages">
 				<ul class="nav">
-					{% for p in PAGES %}
-					<li><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+					{% for name, link in LINKS %}
+					<li><a href="{{ link }}">{{ name }}</a></li>
 					{% endfor %}
-					<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
 				</ul>
 			</div>
 
