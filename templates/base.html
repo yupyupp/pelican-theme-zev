@@ -29,7 +29,7 @@
 						<li><a href="{{ link }}">{{ title }}</a></li>
 					{% endfor %}
 					{% if DISPLAY_PAGES_ON_MENU != False %}
-						{% for p in PAGES %}
+						{% for p in LINKS %}
 							<li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
 						{% endfor %}
 					{% endif %}
@@ -57,8 +57,8 @@
 				{% endfor %}
 			</ul>
 
-			<p role="contentinfo">{{ AUTHOR }}<br>
-			Proudly powered by <a href="http://getpelican.com">Pelican</a>. With theme <a href="https://github.com/kd8zev/pelican-theme-zev">zev</a></p>
+			<p role="contentinfo"><a href=mailto:stephen@kd8zev.net">{{ AUTHOR }}</a><br>
+			Proudly powered by <a href="http://getpelican.com">Pelican</a> using <a href="https://github.com/kd8zev/pelican-theme-zev">pelican-theme-zev</a></p>
 			</div>
 		</footer>
 	</body>
