@@ -17,11 +17,11 @@
 			<li class="clearfix"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags}}"><time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> {{ article.title }}</a></li>
 			{% endif %}
 			{% endfor %}
+			<divclass="post wrapper">
+				<p></p>
+				<p>More posts in the <a href="{{ SITEURL }}/archives.html">archive</a>.</p>
+			</div>
 		</ol>
-		<divclass="post wrapper">
-			<p></p>
-			<p>More posts in the <a href="{{ SITEURL }}/archives.html">archive</a>.</p>
-		</div>
 	</div>
 </div>
 {% endblock content %}
