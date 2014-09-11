@@ -393,7 +393,7 @@ header h1 {
 header a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  text-shadow: 0 1px 0 #b3b3b3, 0 1px 0 #999999, 0 2px 0 #808080, 0 3px 0 #666666, 0 4px 0 #4d4d4d, 0 5px 0 #333333, 0px 6px 0 #1a1a1a, 0 7px 6px #0d0d0d;
+  text-shadow: 0 1px 0 #333333, 0 2px 0 #1a1a1a, 0 3px 0 #0d0d0d;
 }
 header a:hover {
   color: #ffffff;
@@ -414,7 +414,6 @@ header a:hover {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
   padding-right: 30px;
-  text-shadow: none;
   font-size: 18px;
 }
 #navbar a:hover {
