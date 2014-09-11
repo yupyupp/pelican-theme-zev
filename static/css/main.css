@@ -413,6 +413,9 @@ footer {
   margin-bottom: 24px;
 }
 .nav li {
+  width: 100%;
+  margin: 0 0 3em 0;
+  float: left;
   list-style: none;
   display: inline;
   padding-right: 10px;
