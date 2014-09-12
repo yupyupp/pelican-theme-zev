@@ -13,11 +13,11 @@
 		<h3>More posts</h3>
 		<ol class="archive">
 			{% endif %}
+			<p>More posts in the <a href="{{ SITEURL }}/archives.html">archive</a>.</p>
 			{% elif loop.index < 7 %}
 			<li class="clearfix"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags}}"><time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> {{ article.title }}</a></li>
 			{% endif %}
 			{% endfor %}
-			<p { text-align: "center" !important; }>More posts in the <a href="{{ SITEURL }}/archives.html">archive</a>.</p>
 		</ol>
 	</div>
 </div>
