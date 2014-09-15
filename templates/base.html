@@ -24,17 +24,26 @@
 			<div class="wrapper">
 				<h1 class="huge"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
 			</div>
-			<nav><ul id="navbar">
-					{% for title, link in MENUITEMS %}
-						<li><a href="{{ link }}">{{ title }}</a></li>
+			<div class="navbar">
+				<ul>
+					{% for page in PAGES %}
+						<li><a href="{{ page.url }}">{{ page.title }}</a>
+							{% if page.children %}
+								<ul>
+								{% for child in page.children %}
+									<li><a href="{{ child.url }}>"</a>{{ child.title }}</li>
+								{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
 					{% endfor %}
 					{% if DISPLAY_PAGES_ON_MENU != False %}
 						{% for p in PAGES %}
 							<li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
 						{% endfor %}
-						<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
 					{% endif %}
-			</ul></nav>
+				</ul>
+			</div>
 		</header>
 
 		{% block content %}

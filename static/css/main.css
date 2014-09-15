@@ -399,27 +399,7 @@ header a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-#navbar {
-  width: 100%;
-  float: left;
-  margin: 1em 0em 0 5em;
-  list-style: none;
-}
-#navbar li {
-  float: left;
-}
-#navbar li a {
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-  padding-right: 30px;
-  font-size: 18px;
-}
-#navbar a:hover {
-  padding-right: 40px;
-  padding-left: 10px;
-}
+
 footer {
   border-width: 20px 0 0;
   -moz-border-image: url('../images/pages.png') 20 0 0 repeat;
@@ -430,6 +410,38 @@ footer {
   margin-top: 96px;
   padding: 48px 5.555555555555555% 24px;
 }
+
+.navbar {
+  width: 100%;
+  float: left;
+  margin: 1em 0em 0 5em;
+  list-style: none;
+}
+.navbar li {
+  float: left;
+}
+.navbar a {
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  padding-right: 30px;
+  font-size: 18px;
+}
+.navbar a:hover {
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+.navbar li li, .navbar li li a {
+	height:0px; 
+	margin-top: -10px; 
+	text-align: center; 
+	color: rgba(255,255,255,.0); 
+	text-decoration: none; 
+	-webkit-transition:all .7s ease-in-out;
+}
+
 .nav {
   margin-bottom: 24px;
 }
