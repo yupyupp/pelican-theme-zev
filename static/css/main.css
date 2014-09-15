@@ -411,36 +411,50 @@ footer {
   padding: 48px 5.555555555555555% 24px;
 }
 
-.navbar {
+nav {
   width: 100%;
-  float: left;
-  margin: 1em 0em 0 5em;
+  margin: 3em 0em 0 5em;
+  padding: 0 20px;
+}
+nav ul {
   list-style: none;
+  position: relative;
+ 
+  display:inline-table;
 }
-.navbar li {
+nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+nav ul li {
   float: left;
 }
-.navbar a {
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-  padding-right: 30px;
+nav ul li:hover {
+}
+nav ul li:hover a {
+}
+nav ul li a {
+  display: block;
+  padding: 10px 10px;
   font-size: 18px;
 }
-.navbar a:hover {
-  padding-right: 40px;
-  padding-left: 10px;
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  display:none;
 }
 
-.navbar li li, .navbar li li a {
-	height:0px; 
-	margin-top: -10px; 
-	text-align: center; 
-	color: rgba(255,255,255,.0); 
-	text-decoration: none; 
-	-webkit-transition:all .7s ease-in-out;
+nav ul ul li {
+  float: none;
+  padding: 15px 40px;
+  background: #4b545f;
 }
+nav ul li:hover > ul {
+  display: block;
+}
+
+
 
 .nav {
   margin-bottom: 24px;
