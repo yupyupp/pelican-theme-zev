@@ -29,7 +29,7 @@
 					{% for page in PAGES -%}
 						{% if page.parent == None -%}
 						<li><a href="{{ page.url }}">{{ page.title }}</a>
-							{% if page.children != [] -%%}	
+							{% if page.children != [] -%}	
 							<ul>
 							{% for child in page.children %}
 								<li><a href="{{ child.url }}>"{{ child.title }}</a></li>
