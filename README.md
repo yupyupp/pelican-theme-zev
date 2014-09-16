@@ -15,6 +15,7 @@ See an example [here](https://kd8zev.net)!
  - Custom/external links as bottom of pages
 
 ## TODO
+ - Mobile friendly CSS
  - Add example config file
  - Add option to have static home page (as opposed to most recent posts)
  - Add logo option

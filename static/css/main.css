@@ -405,7 +405,6 @@ nav {
   background-color: #086FA1;
 }
 nav ul {
-  transition: all .2s ease-in-out;
   list-style: none;
   position: relative;
   display:inline-table;
@@ -438,14 +437,14 @@ nav ul ul {
   height:auto;
   top: 100%;
   display:none;
+  width:auto;
   background-color: #5f6975;
 }
 
 nav ul ul li {
   height:auto;
   float: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  text-align: left;
 }
 nav ul ul li:hover{
   background-color: 4b545f;
