@@ -21,9 +21,8 @@
 	</head>
 	<body>
 		<header class="clearfix" role="banner">
-			<div class="wrapper">
+			<div>
 				<h1 class="huge"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-			</div>
 			<nav id="top">
 				<ul>
 					{% for page in PAGES -%}
@@ -40,6 +39,7 @@
 						{% endif %}
 					{%- endfor %}
 				</ul>
+			</nav>
 			</div>
 		</header>
 
